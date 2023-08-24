@@ -9,15 +9,17 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LogActivity : AppCompatActivity() {
+    private var holdUser: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.log_activity)
-        Log.d("LoginActivity", "OnCreate called")
-
+        Log.d("LogActivity", "OnCreate called")
     }
+
     override fun onStart(){
         super.onStart()
-        Log.d("LoginActivity", "OnStart called")
+        Log.d("LogActivity", "OnStart called")
         val editTextEmail =
             findViewById<EditText>(R.id.editTextEmail)
         val editTextPassword =
@@ -33,14 +35,27 @@ class LogActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
         }
-
     }
+
     override fun onResume() {
         super.onResume()
-        Log.d("LoginActivity", "OnResume called")
-        val editText =
-            intent.getStringExtra("username")
-        val editTextEmail = findViewById<EditText>(R.id.editTextEmail)
-        editTextEmail.setText(editText)
+        Log.d("LogActivity", "OnResume called")
+
     }
+
+    override fun onPause(){
+        super.onPause()
+        Log.d("LogActivity", "OnPause called")
+    }
+
+    override fun onStop(){
+        super.onStop()
+        Log.d("LogActivity", "OnStop called")
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.d("LogActivity","OnDestroy called")
+    }
+
 }

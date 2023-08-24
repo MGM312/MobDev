@@ -21,10 +21,28 @@ class HomeActivity:AppCompatActivity() {
             findViewById<Button>(R.id.buttonLogout)
         buttonLogout.setOnClickListener{
             val intent = Intent(this, LogActivity::class.java)
-            intent.putExtra("username",username)
-            Log.d("HomeActivity", "Sending username: $username")
             startActivity(intent)
             finish()
         }
+    }
+    override  fun onStart(){
+        super.onStart()
+        Log.d("HomeActivity", "OnStart called")
+    }
+    override fun onResume(){
+        super.onResume()
+        Log.d("HomeActivity","OnResume called")
+    }
+    override fun onPause(){
+        super.onPause()
+        Log.d("HomeActivity", "OnPause called")
+    }
+    override fun onStop(){
+        super.onStop()
+        Log.d("HomeActivity", "OnStop called")
+    }
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.d("HomeActivity","OnDestroy called")
     }
 }
