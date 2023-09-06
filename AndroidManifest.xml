@@ -30,5 +30,21 @@
             android:name=".HomeActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".RelativeActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LinearActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TableActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ConstraintActivity"
+            android:exported="true">
+        </activity>
     </application>
 </manifest>

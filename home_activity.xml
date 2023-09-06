@@ -16,14 +16,62 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp">
     </TextView>
+    <RelativeLayout
+        android:id="@+id/layoutRelativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageBemVindo"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/buttonConstraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:layout_marginLeft="65dp"
+            android:text="Constraint">
+        </Button>
+        <Button
+            android:id="@+id/buttonTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/buttonConstraint"
+            android:paddingHorizontal="22.2dp"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Table">
+        </Button>
+        <Button
+            android:id="@+id/buttonRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:layout_below="@id/buttonConstraint"
+            android:layout_marginLeft="65dp"
+            android:text="Relativo">
+        </Button>
+        <Button
+            android:id="@+id/buttonLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:layout_toRightOf="@id/buttonRelative"
+            android:layout_below="@id/buttonConstraint"
+            android:layout_marginHorizontal="10dp"
+            android:text="Linear"></Button>
+
+    </RelativeLayout>
+
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sair"
-        android:layout_below="@id/messageBemVindo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layoutRelativo">
     </Button>
 
 

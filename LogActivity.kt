@@ -29,11 +29,12 @@ class LogActivity : AppCompatActivity() {
         buttonLogin.setOnClickListener{
             val email = editTextEmail.text.toString()
             val password = editTextPassword.text.toString()
-                if (email.isNotBlank() && password == "123"){
-                    val intent = Intent(this, HomeActivity::class.java)
-                    intent.putExtra("username",email)
-                    startActivity(intent)
-                }
+
+            if (email.isNotBlank() && password == "123"){
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("username",email)
+                startActivity(intent)
+            }
         }
     }
 

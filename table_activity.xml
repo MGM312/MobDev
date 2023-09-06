@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2">
+    <TableRow>
+        <TextView
+            android:text="Exemplo Table"
+            android:textSize="25sp">
+        </TextView>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonIntoLinearTable"
+            android:text="LINE"
+            android:textSize="25sp"
+            android:padding="5dp">
+        </Button>
+        <Button
+            android:id="@+id/buttonIntoConstraintTable"
+            android:text="CTRT"
+            android:textSize="25sp"
+            android:padding="5dp">
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/buttonIntoRelativeTable"
+            android:text="RLTV"
+            android:textSize="25sp"
+            android:padding="5dp">
+        </Button>
+        <Button
+            android:id="@+id/buttonSairTable"
+            android:text="SAIR"
+            android:textSize="25sp"
+            android:padding="5dp">
+        </Button>
+    </TableRow>
+</TableLayout>

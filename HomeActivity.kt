@@ -24,6 +24,30 @@ class HomeActivity:AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val buttonRelative =
+            findViewById<Button>(R.id.buttonRelative)
+        buttonRelative.setOnClickListener {
+            val intent = Intent(this, RelativeActivity::class.java)
+            startActivity(intent)
+        }
+        val buttonLinear =
+            findViewById<Button>(R.id.buttonLinear)
+        buttonLinear.setOnClickListener {
+            val intent = Intent(this, LinearActivity::class.java)
+            startActivity(intent)
+        }
+        val buttonConstraint =
+            findViewById<Button>(R.id.buttonConstraint)
+        buttonConstraint.setOnClickListener {
+            val intent = Intent(this, ConstraintActivity::class.java)
+            startActivity(intent)
+        }
+        val buttonTable =
+            findViewById<Button>(R.id.buttonTable)
+        buttonTable.setOnClickListener {
+            val intent = Intent(this, TableActivity::class.java)
+            startActivity(intent)
+        }
     }
     override  fun onStart(){
         super.onStart()
