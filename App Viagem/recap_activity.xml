@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageRecapViagem"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true">
+    </ImageView>
+    <TextView
+        android:id="@+id/textTitleRecapViagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageRecapViagem"
+        android:layout_margin="5dp"
+        android:text="Viagem para "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+    <TextView
+        android:id="@+id/textPeriodoViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitleRecapViagem"
+        android:layout_marginHorizontal="5dp"
+        android:text="XX/XX - XX/XX"
+        android:textSize="15sp"
+        android:textColor="#7A7777">
+    </TextView>
+    <TextView
+        android:id="@+id/textTemaViagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPeriodoViagem"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#373737">
+    </TextView>
+    <TextView
+        android:id="@+id/textNomeAtividadeRecap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTemaViagem"
+        android:text=""
+        android:textSize="25sp"
+        android:textColor="#373737"
+        android:textStyle="bold">
+    </TextView>
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:text="Confirmar"
+        android:textSize="25sp">
+    </Button>
+</RelativeLayout>
